@@ -36,8 +36,8 @@ Sound is optional: time and graphics run without enabling audio.
 ## Quick start
 
 ```bash
-git clone <your-repo-url>
-cd music-of-the-sphere
+git clone https://github.com/joerez/Music-of-the-Spheres.git
+cd Music-of-the-Spheres
 npm install
 npm run dev
 ```
@@ -91,6 +91,12 @@ src/
 Issues and PRs welcome: clearer copy, accessibility, tests on `orbits`/`mapping`, or a second sonification mode (e.g. angular-speed à la Kepler) would all fit the spirit of the project.
 
 Add a `LICENSE` file in the repo root if you want GitHub to show terms explicitly.
+
+---
+
+## Credits
+
+Created by **Joe Rezendes** in San Francisco · [www.joerezendes.com](https://www.joerezendes.com)
 
 ---
 

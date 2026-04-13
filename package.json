@@ -1,6 +1,11 @@
 {
   "name": "music-of-the-sphere",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joerez/Music-of-the-Spheres.git"
+  },
+  "author": "Joe Rezendes (https://www.joerezendes.com)",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

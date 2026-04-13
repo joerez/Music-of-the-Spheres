@@ -302,7 +302,7 @@ function mount(): void {
               </p>
               <p>
                 <strong>Time playback:</strong> pick how many <em>simulated days</em> pass per <em>real</em> second. The time slider then moves on its own
-                (press Pause to stop). Sound is optional—use “Enable sound” when you want to listen.
+                (press Pause to stop). Sound is optional—tap <strong>Sound on</strong> when you want to listen.
               </p>
             </div>
           </details>
@@ -344,6 +344,16 @@ function mount(): void {
           </details>
         </div>
       </section>
+
+      <footer class="site-footer">
+        <p>
+          <a href="https://github.com/joerez/Music-of-the-Spheres" target="_blank" rel="noopener noreferrer">Source code on GitHub</a>
+          <span class="site-footer-sep" aria-hidden="true">·</span>
+          Created by
+          <a href="https://www.joerezendes.com" target="_blank" rel="noopener noreferrer">Joe Rezendes</a>
+          in San Francisco
+        </p>
+      </footer>
     </div>
   `
 

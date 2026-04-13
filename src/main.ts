@@ -191,7 +191,7 @@ function mount(): void {
   app.innerHTML = `
     <div class="app">
       <header class="header">
-        <h1>Music of the sphere</h1>
+        <h1>Music of the spheres</h1>
         <p class="tagline">Interactive distance sonification (modern mapping, not Kepler’s angular-speed harmony).</p>
       </header>
 

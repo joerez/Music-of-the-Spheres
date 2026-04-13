@@ -1,4 +1,4 @@
-# Music of the sphere
+# Music of the spheres
 
 **Turn the solar system into a living chord.**
 

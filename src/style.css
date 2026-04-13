@@ -1,0 +1,289 @@
+:root {
+  --bg: #0c0d12;
+  --panel: #14151c;
+  --text: #e4e6eb;
+  --muted: #8b909d;
+  --accent: #7c9cff;
+  --border: #2a2d38;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.header h1 {
+  font-size: 1.65rem;
+  font-weight: 650;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.viz-panel {
+  padding: 0;
+  overflow: hidden;
+}
+
+.viz-head {
+  padding: 0.85rem 1.1rem 0.35rem;
+}
+
+.viz-head h2 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+}
+
+.viz-hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.viz-host {
+  width: 100%;
+  min-height: 280px;
+}
+
+.viz-host canvas {
+  display: block;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin-top: 1rem;
+}
+
+.panel h2 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.controls .row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.row.wrap {
+  gap: 0.5rem 1rem;
+}
+
+.grow {
+  flex: 1;
+  min-width: 12rem;
+}
+
+label.inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+input[type='range'].grow {
+  width: 100%;
+}
+
+.num {
+  width: 5.5rem;
+}
+
+.num-sm {
+  width: 4.25rem;
+}
+
+.knobs label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+button {
+  font: inherit;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #1e2029;
+  color: var(--text);
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button.primary {
+  background: #2a3150;
+  border-color: #4a5a9e;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.date-readout {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.voice-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.voice-row:last-child {
+  border-bottom: none;
+}
+
+.voice-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.voice-meta {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.help .linklike {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.help #help-body {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.help #help-body p {
+  margin: 0 0 0.65rem;
+}
+
+.help-details {
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.help-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-h, var(--text));
+}
+
+.help-inner {
+  margin-top: 0.6rem;
+}
+
+.help-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.control-hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.select-dps {
+  font: inherit;
+  padding: 0.25rem 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #1e2029;
+  color: var(--text);
+  min-width: 11rem;
+}
+
+.num-wide {
+  width: 6.5rem;
+}
+
+label.full-row {
+  flex: 1 1 100%;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.playback-row {
+  align-items: flex-end;
+}
+
+.staff-lede {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.staff-panel {
+  overflow-x: auto;
+}
+
+.staff-canvas {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.help code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: #1a1c24;
+  padding: 0.1em 0.25em;
+  border-radius: 4px;
+}
